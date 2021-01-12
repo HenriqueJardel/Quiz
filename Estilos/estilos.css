@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Montserrat+Alternates:wght@500&family=Open+Sans&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #24252A;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.inicio {
+    background-color: white;
+    display: inline;
+    font-size: 0.95em;
+    border: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border-radius: 5px;
+    width: 50%;
+    height: 35%;
+}
+
+.inicio h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+  font-weight: 500;
+  margin: 0;
+  font-size: 2em;
+}
+
+.inicio h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.inicio .iniciar {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  background-color: deepskyblue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  left: 80%;
+  width: 115px;
+  height: 45px;
+}
+
+.questionario {
+    background-color: white;
+    border: none;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    border-radius: 5px;
+    width: 50%;
+    height: 50%;
+    display: none;
+  }
+
+.questionario .pergunta  {
+  height: 50px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+  font-weight: 600;
+}
+
+.questionario .tempo {
+  background-color: darkgray;
+  border:none;
+  border-radius: 5px;
+  margin-left: 10px;
+  height: 40px;
+  width: 170px;
+  font-size: 0.75em;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.questionario .opcoes {
+  padding: 25px;
+}
+
+.questionario .opcoes .opcao{
+    background-color: aliceblue;
+    border: 1px solid  #84c5fe;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px;
+    font-weight: 550;
+}
+
+.questionario .acoes button { 
+  font-family: 'Montserrat', sans-serif;
+  background-color: deepskyblue;
+  color: white;
+  font-weight: 600;
+  margin-right: 10px;
+  float: right;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+}
+
+.resultado {
+  background-color: white;
+  font-weight: 600;
+  width: 50%;
+  height: 50%;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 25%;
+  left: 26%;
+  display: none;
+}
+
+.resultado h2 {
+  text-align: center;
+}
+
+.resultado table {
+  width: 75%;
+  border-collapse: collapse;
+  position: relative;
+  left: 12.5%;
+}
+
+.resultado table td {
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 40px;
+  width: 50%;
+  text-align: center;
+}
+
+.resultado .reiniciar {
+  background-color: deepskyblue;
+  color: white;
+  font-weight: 600;
+  height: 40px;
+  width: 100px;
+  float: right;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-top: 25px;
+}
+
+.Rodape {
+  color: white;
+  font-size: 0.7em;
+  position: absolute;
+  bottom: 0;
+  left: 33%;
+  text-align: center;
+}
+
+@media (max-width: 1500px)
+{
+  .Rodape {
+    font-size: 0.65em;
+    left:32%;
+  }
+}
+
+@media (max-width: 1220px)
+{
+  .inicio {
+    font-size: 0.75em;
+    height: 28%;
+  }
+  .inicio .iniciar { 
+    height: 40px;
+    width: 100px;
+    left: 77%;
+  }
+
+  .Rodape {
+    font-size: 0.55em;
+    left: 32%;
+  }
+}
+
+@media (max-width: 941px)
+{
+  .inicio {
+    font-size: 0.65em;
+    width: 55%;
+    left: 25%;
+  }
+
+  .inicio .iniciar {
+    left: 75% ; 
+  }
+  
+  .questionario {
+    font-size: 0.75em;
+  }
+
+  .questionario .tempo {
+    width: 150px;
+  }
+
+  .questionario .acoes button {
+    width: 80px;
+  }
+
+  .Rodape {
+    left: 28%;
+  }
+}
+
+@media(max-width: 740px)
+{
+  .inicio {
+    font-size: 0.55em;
+    width: 60%;
+    height: 23%;
+    left: 20%;
+  }
+
+  .inicio .iniciar { 
+    width: 80px;
+    height: 35px;
+  }
+
+  .resultado {
+    font-size: 0.85em;
+  }
+  
+  .Rodape {
+    left: 20%;
+  }
+}
+
+@media (max-width: 566px)
+{
+  .inicio {
+    font-size: 0.47em;
+    width: 65%;
+    height: 20%;
+  }
+
+  .questionario {
+    font-size: 0.65em;
+    width: 55%;
+  }
+
+  .questionario .tempo {
+    width: 130px;
+  }
+
+  .Rodape {
+    font-size: 0.48em;
+    left: 16%;
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProgWeb Quiz</title>
+  <link rel="stylesheet" href="Estilos/estilos.css"/>
+</head>
+
+<body>
+  <div class="inicio" id="inicio">
+    <h1>Orientações</h1>
+    <h2>O Quiz possui 5 perguntas aleatórias.<br>
+        Tempo limite para resposta é 30 segundos.<br>
+        Não é permitido perguntas em branco.
+      </h2>
+    <button class="iniciar" onclick="iniciarQuestionario()">Iniciar</button>
+  </div>
+
+  <div class="questionario" id="questionario">
+  <div id="pergunta" class="pergunta"></div>
+    <div class="opcoes">
+      <div class="opcao" id="opcao1" onclick="opSelecionada(this)"></div>
+      <div class="opcao" id="opcao2" onclick="opSelecionada(this)"></div>
+      <div class="opcao" id="opcao3" onclick="opSelecionada(this)"></div>
+      <div class="opcao" id="opcao4" onclick="opSelecionada(this)"></div>
+    </div>
+    <div class="acoes">
+      <button class="proximo" onclick="Proximo()">Proximo ></button>
+    </div>
+    <div class="tempo">
+      <span id="Tempo">Tempo Restante: 30</span>
+    </div>
+  </div>
+  
+  <div class="resultado" id ="resultado">
+    <h2>Resultado do Quiz</h2>
+    <table>
+      <tr>
+        <td>Total de Questões</td>
+        <td><span id="total"></span></td>
+      </tr>
+      <tr>
+        <td>Corretas</td>
+        <td><span id="corretas"></span></td>
+      </tr>
+      <tr>
+        <td>Erradas</td>
+        <td><span id="erradas"></span></td>
+      </tr>
+      <tr>
+        <td>Tempo</td>
+        <td><span id= "tempo"></span></td>
+      </tr>
+      <tr>
+        <td>Seu recorde</td>
+        <td><span id="recorde"></span></td>
+      </tr>
+    </table>
+    <button class="reiniciar" onclick="reiniciarQuestionario()">Reiniciar</button>
+  </div>
+  <footer class="Rodape">
+    <h3>Desenvolvido por Henrique Jardel<br>
+        Aluno do 4º semestre de Análise e Desenvolvimento de Sistemas.<br>
+        2020
+    </h3>
+  </footer>
+  <script src="JS/script.js"></script>
+</body>
+</html>
